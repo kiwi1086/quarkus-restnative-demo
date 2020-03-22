@@ -1,6 +1,12 @@
 # quarkus-restnative-demo project
 
+Motivation
 
+Idea
+
+## Prerequisites
+* Raspberry
+    * Install Docker, see https://www.docker.com/blog/happy-pi-day-docker-raspberry-pi/ (Only step 4, we dont need a cluster)
 
 
 
