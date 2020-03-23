@@ -11,7 +11,8 @@ Idea
     * https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md
         * sudo raspi-config
     * https://phoenixnap.com/kb/docker-on-raspberry-pi
-    * Install JDK 11
+    * https://dev.to/rohansawant/installing-docker-and-docker-compose-on-the-raspberry-pi-in-5-simple-steps-3mgl
+    * Install JDK 11 (http://hirt.se/blog/?p=1116)
         * http://download.bell-sw.com/java/14+36/bellsoft-jdk14+36-linux-arm32-vfp-hflt.deb
         * --> http://download.bell-sw.com/java/11/bellsoft-jdk11-linux-arm32-vfp-hflt.deb
         * sudo apt-get install ./bellsoft-jdk11-linux-arm32-vfp-hflt.deb
