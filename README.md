@@ -6,8 +6,18 @@ Idea
 
 ## Prerequisites
 * Raspberry
-    * Install Docker, see https://www.docker.com/blog/happy-pi-day-docker-raspberry-pi/ (Only step 4, we dont need a cluster)
-
+    * Raspberry Pi Imageer --> Raspian
+    * Create empty ssh file without extensions to activate ssh on boot
+    * https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md
+        * sudo raspi-config
+    * https://phoenixnap.com/kb/docker-on-raspberry-pi
+    * Install JDK 11
+        * http://download.bell-sw.com/java/14+36/bellsoft-jdk14+36-linux-arm32-vfp-hflt.deb
+        * --> http://download.bell-sw.com/java/11/bellsoft-jdk11-linux-arm32-vfp-hflt.deb
+        * sudo apt-get install ./bellsoft-jdk11-linux-arm32-vfp-hflt.deb
+        * sudo update-alternatives --config javac
+        * sudo update-alternatives --config java
+    
 
 
 # Generated Text

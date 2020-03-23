@@ -1,0 +1,20 @@
+version: '3.7'
+services:
+  prometheus:
+    image: "prom/prometheus"
+    volumes:
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      - "9090:9090"
+    network_mode: "bridge"
+  grafana:
+    image: "grafana/grafana"
+    ports:
+      - "3000:3000"
+    user: "472"
+    volumes:
+      - ./grafana/provisioning/plugins:/etc/grafana/provisioning/plugins
+      - ./grafana/provisioning/datasources:/etc/grafana/provisioning/datasources
+      - ./grafana/provisioning/dashboards:/etc/grafana/provisioning/dashboards
+      - ./grafana/provisioning/grafana_data:/var/lib/grafana
+    network_mode: "bridge"

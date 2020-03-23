@@ -1,16 +1,32 @@
 package com.kiwi.restnative;
 
 import javax.ws.rs.GET;
+import javax.ws.rs.PATCH;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-@Path("/hello")
+@Path("/power")
 public class ExampleResource {
 
+    @PATCH
+    @Path("/on")
+    @Produces(MediaType.APPLICATION_JSON)
+    public String turnOn() {
+        return "{ status: okay }";
+    }
+
+    @PATCH
+    @Path("/off")
+    @Produces(MediaType.APPLICATION_JSON)
+    public String turnOff() {
+        return "{ status: okay }";
+    }
+
     @GET
-    @Produces(MediaType.TEXT_PLAIN)
+    @Path("/status")
+    @Produces(MediaType.APPLICATION_JSON)
     public String hello() {
-        return "hello";
+        return "{ status: \"on | off\"  }";
     }
 }
