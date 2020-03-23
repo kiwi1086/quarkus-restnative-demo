@@ -18,3 +18,8 @@ services:
       - ./grafana/provisioning/dashboards:/etc/grafana/provisioning/dashboards
       - ./grafana/provisioning/grafana_data:/var/lib/grafana
     network_mode: "bridge"
+  quarkus:
+    image: "kiwi1086/quarkus-restnative-demo"
+    ports:
+      - "8080:8080"
+    network_mode: "bridge"
