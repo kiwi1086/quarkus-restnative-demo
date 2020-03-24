@@ -1,5 +1,11 @@
 # quarkus-restnative-demo project
 
+[![CircleCI Build Status](https://circleci.com/gh/kiwi1086/quarkus-restnative-demo/tree/master.svg?style=shield)](https://circleci.com/gh/kiwi1086/quarkus-restnative-demo/tree/master)
+
+Docker Hub: https://hub.docker.com/r/kiwi1086/quarkus-restnative-demo
+
+
+
 Motivation
 
 Idea
