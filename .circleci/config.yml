@@ -36,7 +36,7 @@ jobs:
           path: build/test-results/test
           when: always
       - run:
-          name: Build Project Native
+          name: Build Project
           command: |
             #./gradlew buildNative -Dquarkus.native.container-build=true --debug --stacktrace
             ./gradlew clean build
@@ -45,6 +45,7 @@ jobs:
           name: Build Docker image
           command: |
             #docker build -f src/main/docker/Dockerfile.native -t $IMAGE_NAME:latest .
+            #docker build -f src/main/docker/Dockerfile.armjvm -t $IMAGE_NAME:latest .
             docker build -f src/main/docker/Dockerfile.jvm -t $IMAGE_NAME:latest .
       - run:
           name: Push Docker Image
